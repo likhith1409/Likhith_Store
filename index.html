@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likhith Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+    <header>
+        <div class="top-bar">
+            <h1>Likhith Store</h1>
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <span id="sun-icon" class="icon hidden">☀️</span>
+                <span id="moon-icon" class="icon">🌙</span>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="featured">
+            <div class="app-card">
+                <img src="Data/logo.png" alt="NoteQ App" id="app-icon">
+                <h2 id="app-title">NoteQ</h2>
+                <p id="app-description">NoteQ is a notes and PDF app that allows you to manage all your notes, share them with others, and communicate with fellow users in the doubts section for any queries. It's simple, easy to use, and verified safe.</p>
+                <div class="app-status">
+                    <span class="verified">Verified App</span>
+                    <span class="safe">Safe to Use</span>
+                </div>
+                <button id="install-btn" data-src="Data/app-release.apk">Install</button>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Likhith Store</h2>
+            <p>Likhith Store is your go-to app store, loaded with all your favorite apps that are safe to use. We prioritize your security and ensure all apps are verified before making them available. Explore, download, and enjoy a seamless app experience with us.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Likhith Store. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
