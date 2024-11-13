@@ -10,9 +10,21 @@ document.addEventListener('DOMContentLoaded', function() {
         moonIcon.classList.toggle('hidden');
     });
 
+    const installBtn1 = document.getElementById('install-btn1');
+
+    installBtn1.addEventListener('click', function() {
+        const apkSrc = installBtn1.getAttribute('data-src');
+        const link = document.createElement('a');
+        link.href = apkSrc;
+        link.download = 'Blocksy.apk';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+
     const installBtn = document.getElementById('install-btn');
 
-    installBtn.addEventListener('click', function() {
+    installBtn1.addEventListener('click', function() {
         const apkSrc = installBtn.getAttribute('data-src');
         const link = document.createElement('a');
         link.href = apkSrc;
