@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const installBtn1 = document.getElementById('install-btn1');
+    const installBtn = document.getElementById('install-btn');
 
     installBtn1.addEventListener('click', function() {
         const apkSrc = installBtn1.getAttribute('data-src');
@@ -22,9 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.removeChild(link);
     });
 
-    const installBtn = document.getElementById('install-btn');
-
-    installBtn1.addEventListener('click', function() {
+    installBtn.addEventListener('click', function() {
         const apkSrc = installBtn.getAttribute('data-src');
         const link = document.createElement('a');
         link.href = apkSrc;
